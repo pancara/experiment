@@ -2,6 +2,10 @@ var handlerBackButton = function () {
     var _this = $(this);
     var container = _this.parent().parent();
     var slider = $(".slider", container);
+
+    if ($(slider).is(':animated'))
+      return;
+
     var marginLeft = parseInt(slider.css("marginLeft"));
     if (marginLeft !== 0) {
         var view = $(".view", container);
@@ -13,8 +17,11 @@ var handlerBackButton = function () {
 var handlerClickMenu = function () {
     var _this = $(this);
     var parent = _this.parent();
-
     var slider = $(parent).parent();
+
+    if ($(slider).is(':animated'))
+        return;
+
     $(parent).nextAll().each(function (idx, el) {
         $(el).hide();
     });
