@@ -1,0 +1,30 @@
+.slide-menu {
+  background: lime;
+  position: relative;
+  display: inline-block;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  overflow: hidden; }
+  .slide-menu > .caption {
+    background: #cccccc;
+    height: 30px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #999999; }
+  .slide-menu > .view {
+    background: #eeeeee;
+    width: 100%;
+    box-sizing: border-box;
+    overflow: visible; }
+    .slide-menu > .view .slider {
+      display: inline-block;
+      background: #cccccc; }
+      .slide-menu > .view .slider ul {
+        display: inline-block;
+        position: absolute;
+        margin: 0px 0px 0px 0px;
+        padding: 0px 0px 0px 0px;
+        list-style: none; }
+        .slide-menu > .view .slider ul li {
+          border-bottom: 1px solid white;
+          padding: 4px 4px 4px 4px; }
