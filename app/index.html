@@ -16,15 +16,45 @@
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
     <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="styles/animate.css">
+    <link rel="stylesheet" href="styles/menuSlide.css">
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
-</head>
-<body ng-app="experimentApp">
-<div menu-slide></div>
+    <style>
+        body {
+            background: #CCC;
+        }
 
+        #menuContainer, #menuContainer_2 {
+            padding: 4px;
+            background: #333333;
+            width: 20%;
+            height: 300px;
+            margin-left: 400px;
+
+        }
+    </style>
+</head>
+<body ng-app="siakunApp">
+
+<div ng-controller="MainMenuCtrl">
+    <div id="menuContainer">
+        <menu-slide menu-data="menuData"></menu-slide>
+    </div>
+
+    <div id="menuContainer_2">
+        <menu-slide menu-data="menuData"></menu-slide>
+    </div>
+
+</div>
+
+
+<script src="bower_components/jquery/jquery.js"></script>
 <script src="bower_components/angular/angular.js"></script>
 
 <!-- build:js scripts/modules.js -->
+<script src="bower_components/angular-route/angular-route.js"></script>
+<script src="bower_components/angular-animate/angular-animate.js"></script>
 <script src="bower_components/angular-resource/angular-resource.js"></script>
 <script src="bower_components/angular-cookies/angular-cookies.js"></script>
 <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
@@ -32,8 +62,17 @@
 
 <!-- build:js({.tmp,app}) scripts/scripts.js -->
 <script src="scripts/app.js"></script>
-<script src="scripts/controllers/main.js"></script>
 <script src="scripts/directives/menuSlide.js"></script>
+<script src="scripts/controllers/MainMenuCtrl.js"></script>
+<script src="scripts/controllers/DemoCtrl.js"></script>
 <!-- endbuild -->
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $(window).bind("resize", function () {
+            console.log("resizing.");
+        });
+    });
+</script>
 </body>
 </html>

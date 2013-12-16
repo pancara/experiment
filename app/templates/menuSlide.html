@@ -1,1 +1,16 @@
-<div class="menuContainer">MENU CONTAINER</div>
+<div class='menuSlide'>
+    <div class='header'>
+        <span ng-click='clickBackBtn()'>Back</span>
+    </div>
+    <div class='view'>
+        <div class='slider'>
+            <ul ng-repeat='menu in menuList' class='menu' ng-show='isMenuVisible($index)'>
+                <li ng-repeat='menuItem in menu'>
+                    <a ng-click='clickMenuItem(menuItem)' href=''>
+                        {{ menuItem.text }}
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

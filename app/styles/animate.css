@@ -1,0 +1,8 @@
+.animate-enter {
+  /* Chrome */
+  -webkit-transition: 1s linear all;
+  transition: 1s linear all;
+  opacity: 0; }
+
+.animate-enter.animate-enter-active {
+  opacity: 1; }
