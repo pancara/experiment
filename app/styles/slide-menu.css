@@ -1,30 +1,37 @@
-.slide-menu {
-  background: lime;
-  position: relative;
-  display: inline-block;
-  box-sizing: border-box;
-  width: 100%;
-  height: 100%;
-  overflow: hidden; }
-  .slide-menu > .caption {
-    background: #cccccc;
-    height: 30px;
-    box-sizing: border-box;
-    border-bottom: 1px solid #999999; }
-  .slide-menu > .view {
-    background: #eeeeee;
-    width: 100%;
-    box-sizing: border-box;
-    overflow: visible; }
-    .slide-menu > .view .slider {
-      display: inline-block;
-      background: #cccccc; }
-      .slide-menu > .view .slider ul {
-        display: inline-block;
-        position: absolute;
-        margin: 0px 0px 0px 0px;
-        padding: 0px 0px 0px 0px;
-        list-style: none; }
-        .slide-menu > .view .slider ul li {
-          border-bottom: 1px solid white;
-          padding: 4px 4px 4px 4px; }
+/*
+Syntax error: Inconsistent indentation: 19 spaces were used for indentation, but the rest of the document was indented using 4 spaces.
+        on line 35 of slide-menu.sass
+
+30:                 padding: 0px 0px 0px 0px
+31:                 list-style: none
+32: 
+33:                 li
+34:                     border-bottom: 1px solid #FFF
+35:                    padding: 4px 4px 4px 4px
+
+Backtrace:
+slide-menu.sass:35
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.12/lib/sass/engine.rb:424:in `block in tabulate'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.12/lib/sass/engine.rb:382:in `each'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.12/lib/sass/engine.rb:382:in `each_with_index'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.12/lib/sass/engine.rb:382:in `tabulate'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.12/lib/sass/engine.rb:345:in `_to_tree'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.12/lib/sass/engine.rb:315:in `_render'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.12/lib/sass/engine.rb:262:in `render'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.12/lib/sass/plugin/compiler.rb:362:in `update_stylesheet'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.12/lib/sass/plugin/compiler.rb:203:in `block in update_stylesheets'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.12/lib/sass/plugin/compiler.rb:201:in `each'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.12/lib/sass/plugin/compiler.rb:201:in `update_stylesheets'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.12/lib/sass/plugin.rb:81:in `update_stylesheets'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.12/lib/sass/exec.rb:443:in `watch_or_update'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.12/lib/sass/exec.rb:326:in `process_result'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.12/lib/sass/exec.rb:41:in `parse'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.12/lib/sass/exec.rb:21:in `parse!'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.12/bin/sass:9:in `<top (required)>'
+C:/Ruby193/bin/sass:23:in `load'
+C:/Ruby193/bin/sass:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: Inconsistent indentation: 19 spaces were used for indentation, but the rest of the document was indented using 4 spaces.\A         on line 35 of slide-menu.sass\A \A 30:                 padding: 0px 0px 0px 0px\A 31:                 list-style: none\A 32: \A 33:                 li\A 34:                     border-bottom: 1px solid #FFF\A 35:                    padding: 4px 4px 4px 4px"; }

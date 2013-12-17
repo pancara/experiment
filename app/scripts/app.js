@@ -1,17 +1,20 @@
 'use strict';
+var siakun = siakun || {};
 
-angular.module('experimentApp', [
-  'ngCookies',
-  'ngResource',
-  'ngSanitize'
-])
-  .config(function ($routeProvider) {
-    $routeProvider
-      .when('/', {
-        templateUrl: 'views/main.html',
-        controller: 'MainCtrl'
-      })
-      .otherwise({
-        redirectTo: '/'
-      });
-  });
+siakun.app = angular.module('siakunApp', [
+        'ngRoute',
+        'ngCookies',
+        'ngResource',
+        'ngSanitize',
+        'ngGrid'
+    ])
+    .config(function ($routeProvider) {
+        $routeProvider
+            .when('/', {
+                templateUrl: 'views/main.html',
+                controller: 'MainCtrl'
+            })
+            .otherwise({
+                redirectTo: '/'
+            });
+    });
