@@ -1,112 +1,69 @@
 <!doctype html>
+<html>
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title></title>
+    <title>SI Akuntansi Client</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
-    <!-- build:css({.tmp,app}) styles/main.css -->
+    <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="bower_components/ng-grid/ng-grid.css">
     <!-- endbuild -->
-    <link href="styles/slide-menu.css" type="text/css" rel="stylesheet"/>
     <style>
-        #container {
-            width: 120px;
-            height: 300px;
-            margin-left: 300px;
-            display: inline-block;
-            border: 1px solid #0000FF;
-            padding: 4px;
+        body {
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            color: #333333;
+            font-size: 12px;
+            line-height: 24px;
+        }
+
+        .gridStyle {
+            border: 1px solid rgb(212, 212, 212);
+            width: 60%;
+            height: 500px;
+            background: #999999;
+            background-image: linear-gradient(#CCC #EEE, #DDD);
         }
     </style>
+
 </head>
-<body>
-<div id="container"></div>
+<body ng-app="siakunApp">
+<div ng-controller="DemoCtrl">
+    <button ng-click="getData()">get data</button>
+    <button ng-click="clearData()">clear</button>
+    <div class="gridStyle" ng-grid="gridOptions"></div>
+    {{ total }}
+    <div ng-repeat="data in selections">
+        {{ data }}
+    </div>
+</div>
 
 <script src="bower_components/jquery/jquery.js"></script>
-<script src="scripts/widget/slidemenu.js"></script>
+<script src="bower_components/angular/angular.js"></script>
+
+<!-- build:js scripts/modules.js -->
+<script src="bower_components/angular-route/angular-route.js"></script>
+<script src="bower_components/angular-animate/angular-animate.js"></script>
+<script src="bower_components/angular-resource/angular-resource.js"></script>
+<script src="bower_components/angular-cookies/angular-cookies.js"></script>
+<script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+<script src="bower_components/ng-grid/build/ng-grid.js"></script>
+<!-- endbuild -->
+
+<!-- build:js({.tmp,app}) scripts/scripts.js -->
+<script src="scripts/app.js"></script>
+<script src="scripts/directives/menuSlide.js"></script>
+<script src="scripts/controllers/MainMenuCtrl.js"></script>
+<script src="scripts/controllers/DemoCtrl.js"></script>
+<!-- endbuild -->
+
 <script type="text/javascript">
     $(document).ready(function () {
-        var data = [
-            {
-                caption: "Menu 1",
-                url: "1",
-                submenu: [
-                    {
-                        caption: "Menu 1.1",
-                        url: "1.1",
-                        submenu: [
-                            {
-                                caption: "Menu 1.1.1",
-                                url: "1.1.1"
-                            },
-                            {
-                                caption: "Menu 1.1.2",
-                                url: "1.1.2"
-                            },
-                            {
-                                caption: "Menu 1.1.3",
-                                url: "1.1.3"
-                            }
-
-                        ]
-                    },
-                    {
-                        caption: "Menu 1.2",
-                        url: "1.2"
-                    },
-                    {
-                        caption: "Menu 1.3",
-                        url: "1.3"
-                    }
-
-                ]
-            },
-            {
-                caption: "Menu 2",
-                url: "url 2",
-                submenu: [
-                    {
-                        caption: "Menu 2.1",
-                        url: "2.1"
-                    },
-                    {
-                        caption: "Menu 2.2",
-                        url: "2.2",
-                        submenu: [
-                            {
-                                caption: "Menu 2.2.1",
-                                url: "2.2.1"
-                            }
-                        ]
-                    }
-
-                ]
-            },
-            {
-                caption: "Menu 3",
-                url: "url 3",
-                submenu: [
-                    {
-                        caption: "Menu 3.1",
-                        url: "3.1"
-                    },
-                    {
-                        caption: "Menu 3.2",
-                        url: "3.2",
-                        submenu: [
-                            {
-                                caption: "Menu 3.2.1",
-                                url: "3.2.1"
-                            }
-                        ]
-                    }
-
-                ]
-            },
-        ];
-        initSlideMenu($("#container"), data);
+        $(window).bind("resize", function () {
+            console.log("resizing.");
+        });
     });
 </script>
 </body>

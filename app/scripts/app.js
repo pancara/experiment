@@ -5,7 +5,8 @@ siakun.app = angular.module('siakunApp', [
         'ngRoute',
         'ngCookies',
         'ngResource',
-        'ngSanitize'
+        'ngSanitize',
+        'ngGrid'
     ])
     .config(function ($routeProvider) {
         $routeProvider
