@@ -1,16 +1,54 @@
+#menuContainer {
+  width: 100%;
+  height: 500px; }
+  #menuContainer .contentToggle {
+    box-sizing: border-box;
+    position: relative;
+    display: inline-block;
+    width: 3%;
+    height: 100%;
+    float: right;
+    background: #1a1f24;
+    background: radial-gradient(top, #3f4449 0%, #1a1f24 80%);
+    background: -moz-radial-gradient(top, #3f4449 0%, #1a1f24 80%);
+    background: -webkit-radial-gradient(top, #3f4449 0%, #1a1f24 80%); }
+    #menuContainer .contentToggle img.toggle {
+      margin-top: auto; }
+      #menuContainer .contentToggle img.toggle:hover {
+        cursor: pointer; }
+
 .menuSlide {
+  float: left;
   position: relative;
   display: inline-block;
   box-sizing: border-box;
-  width: 100%;
+  width: 97%;
   height: 100%;
   overflow: hidden;
-  background: white; }
+  background: #cccccc; }
   .menuSlide > .header {
-    background: #aaaaaa;
-    height: 30px;
+    height: 60px;
     box-sizing: border-box;
-    border-bottom: 1px solid #999999; }
+    padding: 4px 4px 0px 0px;
+    background: #1a1f24;
+    background: radial-gradient(top, #3f4449 0%, #1a1f24 80%);
+    background: -moz-radial-gradient(top, #3f4449 0%, #1a1f24 80%);
+    background: -webkit-radial-gradient(top, #3f4449 0%, #1a1f24 80%);
+    list-style: none;
+    color: #cccccc; }
+    .menuSlide > .header span {
+      display: inline-block;
+      vertical-align: top;
+      font-size: 20px;
+      padding: 12px 48px;
+      font-weight: bold; }
+    .menuSlide > .header img.back {
+      padding: 10px 20px; }
+      .menuSlide > .header img.back:hover {
+        cursor: pointer; }
+  .menuSlide > .footer {
+    display: block;
+    position: relative; }
   .menuSlide > .indicator {
     height: 14px;
     background: #aaaaaa;
@@ -22,16 +60,18 @@
       height: 8px;
       width: 8px; }
   .menuSlide > .view {
-    display: inline-block;
-    position: absolute;
+    position: relative;
     box-sizing: border-box;
-    background: transparent; }
+    margin-left: 0px;
+    background: #1a1f24;
+    background: radial-gradient(top, #3f4449 0%, #1a1f24 80%);
+    background: -moz-radial-gradient(top, #3f4449 0%, #1a1f24 80%);
+    background: -webkit-radial-gradient(top, #3f4449 0%, #1a1f24 80%); }
     .menuSlide > .view .slider {
       display: inline-block;
       position: absolute;
       background: transparent;
-      box-sizing: border-box;
-      background: transparent; }
+      box-sizing: border-box; }
       .menuSlide > .view .slider ul {
         display: inline-block;
         position: absolute;
@@ -39,14 +79,40 @@
         padding: 0px 0px 0px 0px;
         list-style: none; }
         .menuSlide > .view .slider ul li {
-          padding: 0px 0px 0px 0px;
-          display: block;
-          margin-top: 1px;
-          border-top: 1px solid #cccccc;
-          border-bottom: 1px solid #cccccc; }
-          .menuSlide > .view .slider ul li:last-child {
-            margin-bottom: 0px; }
+          margin: 0px;
+          padding: 0px;
+          display: block; }
           .menuSlide > .view .slider ul li a {
             display: block;
-            font-family: "Trebuchet MS";
-            text-decoration: none; }
+            padding: 6px 6px 6px 6px;
+            text-decoration: none;
+            text-align: left;
+            background: #1a1f24;
+            background: radial-gradient(top, #3f4449 0%, #1a1f24 80%);
+            background: -moz-radial-gradient(top, #3f4449 0%, #1a1f24 80%);
+            background: -webkit-radial-gradient(top, #3f4449 0%, #1a1f24 80%);
+            list-style: none;
+            color: #cccccc; }
+            .menuSlide > .view .slider ul li a:hover {
+              background: #1387fc;
+              background: radial-gradient(top, #5daeff 0%, #0065cb 100%);
+              background: -moz-radial-gradient(top, #5daeff 0%, #0065cb 100%);
+              background: -webkit-radial-gradient(top, #5daeff 0%, #0065cb 100%);
+              color: #383838;
+              font-weight: bold; }
+            .menuSlide > .view .slider ul li a span {
+              margin-left: 8px;
+              display: inline-block;
+              vertical-align: top;
+              font-size: 14px;
+              padding-top: 10px; }
+            .menuSlide > .view .slider ul li a img {
+              display: inline-block; }
+              .menuSlide > .view .slider ul li a img.glyph {
+                margin: 5px 5px;
+                padding: 7px;
+                background: #3f4449;
+                border-radius: 4px; }
+              .menuSlide > .view .slider ul li a img.submenu {
+                padding: 17px;
+                float: right; }

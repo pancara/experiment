@@ -1,23 +1,66 @@
+#menuContainer
+    //border: 1px solid green
+    width: 100%
+    height: 500px
+    .contentToggle
+        box-sizing: border-box
+        position: relative
+        display: inline-block
+        width: 3%
+        height: 100%
+        //border: 1px solid yellow
+        float: right
+        background: #1a1f24
+        background: radial-gradient(top, #3f4449 0%, #1a1f24 80%)
+        background: -moz-radial-gradient(top, #3f4449 0%, #1a1f24 80%)
+        background: -webkit-radial-gradient(top, #3f4449 0%, #1a1f24 80%)
+        img
+            &.toggle
+                //border: 1px solid yellow
+                margin-top: auto
+                &:hover
+                    cursor: pointer
+
 .menuSlide
+    //border: 1px solid red
+    float: left
     position: relative
     display: inline-block
     box-sizing: border-box
-    width: 100%
+    width: 97%
     height: 100%
     overflow: hidden
-    background: #FFF
+    background: #CCCCCC
 
     > .header
-        background: #AAA
-        height: 30px
+        height: 60px
         box-sizing: border-box
-        border-bottom: 1px solid #999
+        padding: 4px 4px 0px 0px
+        background: #1a1f24
+        background: radial-gradient(top, #3f4449 0%, #1a1f24 80%)
+        background: -moz-radial-gradient(top, #3f4449 0%, #1a1f24 80%)
+        background: -webkit-radial-gradient(top, #3f4449 0%, #1a1f24 80%)
+        list-style: none
+        color: #CCCCCC
+        span
+            display: inline-block
+            vertical-align: top
+            font-size: 20px
+            padding: 12px 48px
+            font-weight: bold
+        img
+            &.back
+                padding: 10px 20px
+                &:hover
+                    cursor: pointer
+    > .footer
+        display: block
+        position: relative
 
     > .indicator
         height: 14px
         background: #AAA
         bottom: 0px
-
         .item
             display: inline-block
             background: #336699
@@ -26,18 +69,19 @@
             width: 8px
 
     > .view
-        display: inline-block
-        position: absolute
+        position: relative
         box-sizing: border-box
-        //overflow: visible
-        background: transparent
+        margin-left: 0px
+        background: #1a1f24
+        background: radial-gradient(top, #3f4449 0%, #1a1f24 80%)
+        background: -moz-radial-gradient(top, #3f4449 0%, #1a1f24 80%)
+        background: -webkit-radial-gradient(top, #3f4449 0%, #1a1f24 80%)
 
         .slider
             display: inline-block
             position: absolute
             background: transparent
             box-sizing: border-box
-            background: transparent
 
             ul
                 display: inline-block
@@ -45,21 +89,50 @@
                 margin: 0px 0px 0px 0px
                 padding: 0px 0px 0px 0px
                 list-style: none
-                //overflow-y: scroll
 
                 li
-                    padding: 0px 0px 0px 0px
+                    margin: 0px
+                    padding: 0px
                     display: block
-                    margin-top: 1px
-                    border-top: 1px solid #CCC
-                    border-bottom: 1px solid #CCC
 
-                    &:last-child
-                        margin-bottom: 0px
                     a
                         display: block
-                        font-family: "Trebuchet MS"
+                        padding: 6px 6px 6px 6px
                         text-decoration: none
+                        text-align: left
+                        background: #1a1f24
+                        background: radial-gradient(top, #3f4449 0%, #1a1f24 80%)
+                        background: -moz-radial-gradient(top, #3f4449 0%, #1a1f24 80%)
+                        background: -webkit-radial-gradient(top, #3f4449 0%, #1a1f24 80%)
+                        list-style: none
+                        color: #CCCCCC
+
+                        &:hover
+                            background: #1387fc
+                            background: radial-gradient(top, #5daeff 0%, #0065cb 100%)
+                            background: -moz-radial-gradient(top, #5daeff 0%, #0065cb 100%)
+                            background: -webkit-radial-gradient(top, #5daeff 0%, #0065cb 100%)
+                            color: #383838
+                            font-weight: bold
+
+                        span
+                            margin-left: 8px
+                            display: inline-block
+                            vertical-align: top
+                            font-size: 14px
+                            padding-top: 10px
+                        img
+                            display: inline-block
+
+                            &.glyph
+                                margin: 5px 5px
+                                padding: 7px
+                                background: #3f4449
+                                border-radius: 4px
+
+                            &.submenu
+                                padding: 17px
+                                float: right
 
 
 

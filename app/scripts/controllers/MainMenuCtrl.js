@@ -4,7 +4,7 @@ siakun.app
         $scope.menuData = [
             {
                 "text": "1",
-                "glyph": "glyp 1",
+                "glyph": 'images/menu/customer.png',
                 "path": "path 1"
             },
             {

@@ -1,13 +1,17 @@
-<div class='menuSlide'>
+<div class='menuSlide' xmlns="http://www.w3.org/1999/html">
     <div class='header'>
-        <span ng-click='clickBackBtn()'>Back</span>
+        <img src='images/menu/back2.png' class='back' ng-click='clickBackBtn()'/>
+        <span class='caption'>Menu</span>
     </div>
+
     <div class='view'>
         <div class='slider'>
             <ul ng-repeat='menu in menuList' class='menu' ng-show='isMenuVisible($index)'>
                 <li ng-repeat='menuItem in menu'>
                     <a ng-click='clickMenuItem(menuItem)' href=''>
-                        {{ menuItem.text }}
+                        <img ng-src='{{menuItem.glyph}}' class='glyph'/>
+                        <span>{{ menuItem.text }}</span>
+                        <img src='images/menu/arrow-right2.png' class='submenu' ng-show='hasSubmenu(menuItem)'/>
                     </a>
                 </li>
             </ul>

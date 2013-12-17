@@ -146,6 +146,7 @@ siakun.app
 
             angular.element('ul.menu', $element)
                 .each(function (idx, el) {
+                    angular.element(el).css('width', wView);
                     angular.element(el).css('margin-left', wView * $scope.stack.indexOf(idx));
                 });
 

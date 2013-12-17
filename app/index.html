@@ -10,7 +10,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title></title>
+    <title>SI Akuntansi Client</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
@@ -20,34 +20,46 @@
     <link rel="stylesheet" href="styles/menuSlide.css">
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
-    <style>
-        body {
-            background: #CCC;
-        }
 
-        #menuContainer, #menuContainer_2 {
-            padding: 4px;
-            background: #333333;
-            width: 20%;
-            height: 300px;
-            margin-left: 400px;
-
-        }
-    </style>
 </head>
 <body ng-app="siakunApp">
+    <div id="main-container">
+        <div id="header">
+            <h1>SI Akuntansi</h1>
+            <!--<div class='nav'>-->
+                <!--<ul>-->
+                    <!--<li><a href="#">Home</a></li>-->
+                    <!--<li><a href="#">Tutorials</a></li>-->
+                    <!--<li><a href="#">Articles</a></li>-->
+                    <!--<li><a href="#">Inspiration</a></li>-->
+                <!--</ul>-->
+            <!--</div>-->
+        </div>
 
-<div ng-controller="MainMenuCtrl">
-    <div id="menuContainer">
-        <menu-slide menu-data="menuData"></menu-slide>
+        <div id="content">
+            <div class="content-kiri">
+                <div class='menuContainer'>
+                    <div ng-controller="MainMenuCtrl">
+                        <div id="menuContainer">
+                            <menu-slide menu-data="menuData"></menu-slide>
+
+                            <div class='contentToggle'>
+                                <img src='images/menu/toggle.gif' class='toggle' ng-click='clickBackBtn()'/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-kanan">
+                konten konten konten konten konten konten konten konten konten konten konten konten konten konten konten konten konten konten konten konten konten konten konten konten konten konten konten konten konten konten konten konten konten konten konten konten
+            </div>
+        </div>
+
+        <div id="footer">
+            Copyright &copy; Proyek SI Akuntansi
+        </div>
     </div>
-
-    <div id="menuContainer_2">
-        <menu-slide menu-data="menuData"></menu-slide>
-    </div>
-
-</div>
-
 
 <script src="bower_components/jquery/jquery.js"></script>
 <script src="bower_components/angular/angular.js"></script>
