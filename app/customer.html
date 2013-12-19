@@ -18,31 +18,28 @@
             font-size: 12px;
             line-height: 24px;
         }
-
-        .gridStyle {
-            border: 1px solid rgb(212, 212, 212);
-            width: 60%;
-            height: 500px;
-            background: #999999;
-            background-image: linear-gradient(#CCC #EEE, #DDD);
-        }
     </style>
 
 </head>
 <body ng-app="siakunApp">
-
-<div ng-controller="DemoCtrl">
-    <button ng-click="getData()">get data</button>
-    <button ng-click="clearData()">clear</button>
-    <div class="gridStyle" ng-grid="gridOptions"></div>
-    {{ total }}
-    <div ng-repeat="data in selections">
-        {{ data }}
+<div ng-controller="CustomerCtrl">
+    <button ng-click="getCustomers()">Get Resource</button>
+    <button ng-click="getById(1)">Get Id [1]</button>
+    <div>
+        customer : {{ customer.name }}
+        <ul>
+            <li ng-repeat="cust in customers">
+                {{ cust.name }}
+            </li>
+        </ul>
     </div>
 </div>
-<span title="It is tooltip..." class="hasTooltip">
-    Hover me
-</span>
+<div ng-controller="AppMonitorCtrl">
+    {{ http.request | multiply:10 }}
+    <br/>
+    <span ng-repeat="i in http.request | range"> * </span>
+</div>
+
 <script src="bower_components/jquery/jquery.js"></script>
 <script src="bower_components/angular/angular.js"></script>
 
@@ -56,35 +53,20 @@
 <!-- endbuild -->
 
 <!-- build:js({.tmp,app}) scripts/scripts.js -->
-<script src="scripts/libs/tooltipsy.source.js"></script>
-
-<script src="scripts/filters/filter.js"></script>
-<script src="scripts/filters/filter.js"></script>
 <script src="scripts/app.js"></script>
+<script src="scripts/filters/filter.js"></script>
 <script src="scripts/directives/menuSlide.js"></script>
-
 <script src="scripts/services/Customers.js"></script>
 <script src="scripts/services/HttpInterceptor.js"></script>
 
-<script src="scripts/controllers/DemoCtrl.js"></script>
 <script src="scripts/controllers/CustomerCtrl.js"></script>
 <script src="scripts/controllers/AppMonitorController.js"></script>
 <!-- endbuild -->
 
 <script type="text/javascript">
     $(document).ready(function () {
-        $(".hasTooltip").tooltipsy({
-            css: {
-                'padding': '10px',
-                'max-width': '200px',
-                'color': '#303030',
-                'background-color': '#f5f5b5',
-                'border': '1px solid #deca7e',
-                '-moz-box-shadow': '0 0 10px rgba(0, 0, 0, .5)',
-                '-webkit-box-shadow': '0 0 10px rgba(0, 0, 0, .5)',
-                'box-shadow': '0 0 10px rgba(0, 0, 0, .5)',
-                'text-shadow': 'none'
-            }
+        $(window).bind("resize", function () {
+            console.log("resizing.");
         });
     });
 </script>

@@ -6,7 +6,8 @@ siakun.app = angular.module('siakunApp', [
         'ngCookies',
         'ngResource',
         'ngSanitize',
-        'ngGrid'
+        'ngGrid',
+        'Filters',
     ])
     .config(function ($routeProvider) {
         $routeProvider
@@ -17,4 +18,7 @@ siakun.app = angular.module('siakunApp', [
             .otherwise({
                 redirectTo: '/'
             });
+    })
+    .config(function ($httpProvider) {
+        $httpProvider.interceptors.push('HttpInterceptor');
     });

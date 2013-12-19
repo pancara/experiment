@@ -1,0 +1,6 @@
+{
+    "name": "Customer",
+    "address": "Earth",
+    "items": ["A", "B", "C"]
+
+}

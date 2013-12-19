@@ -16,42 +16,57 @@
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
     <!-- build:css(.tmp) styles/main.css -->
-    <link rel="stylesheet" href="styles/animate.css">
     <link rel="stylesheet" href="styles/menuSlide.css">
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
+    <link rel="stylesheet" href="bower_components/ng-grid/ng-grid.css">
+    <style>
+        .gridStyle {
+            border: 1px solid rgb(212, 212, 212);
+            width: 60%;
+            height: 500px;
+            background: #999999;
+            background-image: linear-gradient(#CCC #EEE, #DDD);
+        }
+    </style>
 
 </head>
 <body ng-app="siakunApp">
-    <div id="main-container">
-        <div id="header">
-            <h1>SI Akuntansi</h1>
-        </div >
+<div id="main-container">
+    <div id="header">
+        <h1>SI Akuntansi</h1>
+    </div>
 
-        <div id="content">
-            <div class="content-kiri">
-                <div class='menuContainer'>
-                    <div ng-controller="MainMenuCtrl">
-                        <div id="menuContainer">
-                            <menu-slide menu-data="menuData"></menu-slide>
+    <div id="content">
+        <div class="content-kiri">
+            <div class='menuContainer'>
+                <div ng-controller="MainMenuCtrl">
+                    <div id="menuContainer">
+                        <menu-slide menu-data="menuData"></menu-slide>
 
-                            <div class='contentToggle'>
-                                <img src='images/menu/toggle.gif' class='toggle' ng-click='clickBackBtn()'/>
-                            </div>
+                        <div class='contentToggle'>
+                            <img src='images/menu/toggle.gif' class='toggle' ng-click='clickBackBtn()'/>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
 
-            <div class="content-kanan">
-                konten konten konten konten konten konten konten konten konten konten konten konten konten konten konten konten konten konten konten konten konten konten konten konten konten konten konten konten konten konten konten konten konten konten konten konten
+        <div class="content-kanan" ng-controller="DemoCtrl" class="gridstyle">
+            <button ng-click="getData()">get data</button>
+            <button ng-click="clearData()">clear</button>
+            <div class="gridStyle" ng-grid="gridOptions"></div>
+            {{ total }}
+            <div ng-repeat="data in selections">
+                {{ data }}
             </div>
         </div>
-
-        <div id="footer">
-            Copyright &copy; Proyek SI Akuntansi
-        </div>
     </div>
+
+    <div id="footer">
+        Copyright &copy; Proyek SI Akuntansi
+    </div>
+</div>
 
 <script src="bower_components/jquery/jquery.js"></script>
 <script src="bower_components/angular/angular.js"></script>
