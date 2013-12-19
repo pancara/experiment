@@ -2,7 +2,6 @@
   width: 100%;
   height: 500px; }
   #menuContainer .contentToggle {
-    box-sizing: border-box;
     position: relative;
     display: inline-block;
     width: 3%;
@@ -13,7 +12,7 @@
     background: -moz-radial-gradient(top, #3f4449 0%, #1a1f24 80%);
     background: -webkit-radial-gradient(top, #3f4449 0%, #1a1f24 80%); }
     #menuContainer .contentToggle img.toggle {
-      margin-top: auto; }
+      position: relative; }
       #menuContainer .contentToggle img.toggle:hover {
         cursor: pointer; }
 
@@ -38,9 +37,10 @@
     color: #cccccc; }
     .menuSlide > .header span {
       display: inline-block;
+      position: absolute;
       vertical-align: top;
       font-size: 20px;
-      padding: 12px 48px;
+      margin: 12px 55px;
       font-weight: bold; }
     .menuSlide > .header img.back {
       padding: 10px 20px; }
@@ -69,7 +69,7 @@
     background: -webkit-radial-gradient(top, #3f4449 0%, #1a1f24 80%); }
     .menuSlide > .view .slider {
       display: inline-block;
-      position: absolute;
+      position: relative;
       background: transparent;
       box-sizing: border-box; }
       .menuSlide > .view .slider ul {

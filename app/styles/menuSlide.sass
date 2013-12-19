@@ -3,7 +3,6 @@
     width: 100%
     height: 500px
     .contentToggle
-        box-sizing: border-box
         position: relative
         display: inline-block
         width: 3%
@@ -17,7 +16,7 @@
         img
             &.toggle
                 //border: 1px solid yellow
-                margin-top: auto
+                position: relative
                 &:hover
                     cursor: pointer
 
@@ -33,6 +32,7 @@
     background: #CCCCCC
 
     > .header
+        //border: 1px solid red
         height: 60px
         box-sizing: border-box
         padding: 4px 4px 0px 0px
@@ -43,13 +43,16 @@
         list-style: none
         color: #CCCCCC
         span
+            //border: 1px solid yellow
             display: inline-block
+            position: absolute
             vertical-align: top
             font-size: 20px
-            padding: 12px 48px
+            margin: 12px 55px
             font-weight: bold
         img
             &.back
+                //border: 1px solid red
                 padding: 10px 20px
                 &:hover
                     cursor: pointer
@@ -79,7 +82,7 @@
 
         .slider
             display: inline-block
-            position: absolute
+            position: relative
             background: transparent
             box-sizing: border-box
 
@@ -121,6 +124,7 @@
                             vertical-align: top
                             font-size: 14px
                             padding-top: 10px
+
                         img
                             display: inline-block
 
