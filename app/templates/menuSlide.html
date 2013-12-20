@@ -1,6 +1,6 @@
 <div class='menuSlide' xmlns="http://www.w3.org/1999/html">
     <div class='header'>
-        <img src='images/menu/back2.png' class='back' ng-click='clickBackBtn()'/>
+        <img src='images/menu/back.png' class='back' ng-click='clickBackBtn()'/>
         <span class='caption'>Menu</span>
     </div>
 
@@ -11,7 +11,7 @@
                     <a ng-click='clickMenuItem(menuItem)' href=''>
                         <img ng-src='{{menuItem.glyph}}' class='glyph'/>
                         <span>{{ menuItem.text }}</span>
-                        <img src='images/menu/arrow-right2.png' class='submenu' ng-show='hasSubmenu(menuItem)'/>
+                        <img class='submenu' ng-show='hasSubmenu(menuItem)'/>
                     </a>
                 </li>
             </ul>

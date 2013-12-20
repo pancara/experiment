@@ -10,19 +10,19 @@
   #content {
     width: 100%; }
     #content .content-kanan-atas {
-      width: 80%;
+      width: 79%;
       position: relative;
       float: right; }
     #content .content-kanan-bawah {
-      width: 80%;
+      width: 79%;
       position: relative;
       float: right; }
     #content .content-kiri {
       width: 20%;
-      position: relative; }
+      float: left; }
 
   #menuContainer {
-    width: 100%; }
+    width: 20%; }
     #menuContainer .header {
       width: 100%;
       position: relative; }
@@ -47,19 +47,19 @@
   #content {
     width: 100%; }
     #content .content-kanan-atas {
-      width: 80%;
+      width: 79%;
       position: relative;
       float: right; }
     #content .content-kanan-bawah {
-      width: 80%;
+      width: 79%;
       position: relative;
       float: right; }
     #content .content-kiri {
       width: 20%;
-      position: relative; }
+      float: left; }
 
   #menuContainer {
-    width: 100%; }
+    width: 20%; }
     #menuContainer .header {
       width: 100%;
       height: 120px;

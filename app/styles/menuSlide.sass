@@ -1,11 +1,10 @@
 #menuContainer
     //border: 1px solid green
-    width: 100%
-    height: 500px
+    width: 20%
+    height: 100%
+    position: fixed
     .contentToggle
-        position: relative
-        display: inline-block
-        width: 3%
+        width: 2.5%
         height: 100%
         //border: 1px solid yellow
         float: right
@@ -16,7 +15,7 @@
         img
             &.toggle
                 //border: 1px solid yellow
-                position: relative
+                width: 7px
                 &:hover
                     cursor: pointer
 
@@ -26,29 +25,29 @@
     position: relative
     display: inline-block
     box-sizing: border-box
-    width: 97%
+    width: 97.5%
     height: 100%
     overflow: hidden
-    background: #CCCCCC
+    background: #e4e4e4
 
     > .header
         //border: 1px solid red
         height: 60px
         box-sizing: border-box
         padding: 4px 4px 0px 0px
-        background: #1a1f24
-        background: radial-gradient(top, #3f4449 0%, #1a1f24 80%)
-        background: -moz-radial-gradient(top, #3f4449 0%, #1a1f24 80%)
-        background: -webkit-radial-gradient(top, #3f4449 0%, #1a1f24 80%)
+        -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 10px rgba(0, 0, 0, 0.1) inset
+        -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 10px rgba(0, 0, 0, 0.1) inset
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 10px rgba(0, 0, 0, 0.1) inset
         list-style: none
-        color: #CCCCCC
+        color: #3f4449
+        font-weight: bold
         span
             //border: 1px solid yellow
             display: inline-block
             position: absolute
             vertical-align: top
             font-size: 20px
-            margin: 12px 55px
+            margin: 13px 55px
             font-weight: bold
         img
             &.back
@@ -62,11 +61,10 @@
 
     > .indicator
         height: 14px
-        background: #AAA
+        background: #e4e4e4
         bottom: 0px
         .item
             display: inline-block
-            background: #336699
             margin-right: 4px
             height: 8px
             width: 8px
@@ -75,10 +73,10 @@
         position: relative
         box-sizing: border-box
         margin-left: 0px
-        background: #1a1f24
-        background: radial-gradient(top, #3f4449 0%, #1a1f24 80%)
-        background: -moz-radial-gradient(top, #3f4449 0%, #1a1f24 80%)
-        background: -webkit-radial-gradient(top, #3f4449 0%, #1a1f24 80%)
+        //background: #1a1f24
+        //background: radial-gradient(top, #3f4449 0%, #1a1f24 80%)
+        //background: -moz-radial-gradient(top, #3f4449 0%, #1a1f24 80%)
+        //background: -webkit-radial-gradient(top, #3f4449 0%, #1a1f24 80%)
 
         .slider
             display: inline-block
@@ -103,20 +101,35 @@
                         padding: 6px 6px 6px 6px
                         text-decoration: none
                         text-align: left
-                        background: #1a1f24
-                        background: radial-gradient(top, #3f4449 0%, #1a1f24 80%)
-                        background: -moz-radial-gradient(top, #3f4449 0%, #1a1f24 80%)
-                        background: -webkit-radial-gradient(top, #3f4449 0%, #1a1f24 80%)
+                        //background: #1a1f24
+                        //background: radial-gradient(top, #3f4449 0%, #1a1f24 80%)
+                        //background: -moz-radial-gradient(top, #3f4449 0%, #1a1f24 80%)
+                        //background: -webkit-radial-gradient(top, #3f4449 0%, #1a1f24 80%)
+                        -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 10px rgba(0, 0, 0, 0.1) inset
+                        -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 10px rgba(0, 0, 0, 0.1) inset
+                        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 10px rgba(0, 0, 0, 0.1) inset
                         list-style: none
-                        color: #CCCCCC
+                        color: rgba(0, 0, 0, 0.7)
+                        font-weight: bold
 
                         &:hover
                             background: #1387fc
-                            background: radial-gradient(top, #5daeff 0%, #0065cb 100%)
-                            background: -moz-radial-gradient(top, #5daeff 0%, #0065cb 100%)
-                            background: -webkit-radial-gradient(top, #5daeff 0%, #0065cb 100%)
-                            color: #383838
+                            background: radial-gradient(top, #005dba 0%, #0065cb 100%)
+                            background: -moz-radial-gradient(top, #005dba 0%, #0065cb 100%)
+                            background: -webkit-radial-gradient(top, #005dba 0%, #0065cb 100%)
+                            //background: #ca3838
+                            //background: radial-gradient(top, #ca3838 0%, #ba2525 100%)
+                            //background: -moz-radial-gradient(top, #ca3838 0%, #ba2525 100%)
+                            //background: -webkit-radial-gradient(top, #ca3838 0%, #ba2525 100%)
+                            color: #f0f0f0
                             font-weight: bold
+                            > img.glyph
+                                background: #e4e4e4
+                            > img.submenu
+                                background: url('../images/menu/arrow-right2.png') no-repeat
+                                float: right
+                                margin-top: 13px
+                                margin-right: 7px
 
                         span
                             margin-left: 8px
@@ -130,13 +143,14 @@
 
                             &.glyph
                                 margin: 5px 5px
+                                margin-bottom: 0px
                                 padding: 7px
                                 background: #3f4449
                                 border-radius: 4px
 
                             &.submenu
-                                padding: 17px
                                 float: right
-
-
-
+                                margin-right: 7px
+                                margin-top: 13px
+                                padding: 10px
+                                background: url('../images/menu/arrow-right.png') no-repeat
