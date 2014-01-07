@@ -1,0 +1,127 @@
+/* -----------------------------------------
+ * Customize
+ *  ----------------------------------------- */
+
+.row
+    max-width: 100%
+
+.sidebar
+    background: #fafafa
+    margin: 0 -15px 0 -15px
+    height: 1000px
+    .side-nav
+        padding: 0
+        li
+            //img.submenu
+            //    background: url("../images/arrow-right.png") no-repeat
+            //    padding: 10px
+            //    float: right
+            //    margin-top: 2px
+            //    margin-right: -7px
+            //a:hover > img.submenu
+            //    background: url("../images/arrow-right2.png") no-repeat
+            //    padding: 10px
+            //    float: right
+            //    margin-top: 2px
+            //    margin-right: -7px
+            &.divider
+                margin: 0px 0px
+            a
+                padding: 0.33333rem 20px
+            > a:first-child
+                background: whitesmoke
+                color: #008cba
+                margin: -3px 5px 0 5px //top right bottom left
+            &:hover > a:first-child
+                list-style: none
+                color: white
+                background-color: #008cba
+                border-color: #0079a1
+                -webkit-transition: background-color 500ms ease-out
+                -moz-transition: background-color 500ms ease-out
+                transition: background-color 500ms ease-out
+                -webkit-appearance: none
+                border: none
+    h1, h2, h3, h4, h5, h6
+        padding: 4px 0px
+        font-size: 0.77778rem
+        font-weight: bold
+
+#footer
+    position: fixed
+    bottom: 0px
+    clear: both
+    width: 100%
+    height: 20px
+    background: #1b1d1f
+
+.top-bar
+    bottom: auto
+    position: fixed
+    top: 0
+    z-index: 100
+    width: 100%
+    height: 45px
+    .name h1
+        font-size: 24px
+        margin-left: 15px
+
+#main
+    margin: 45px auto
+
+.heading
+    list-style: none
+    color: #3f4449
+    font-weight: bold
+    border-bottom: 1px solid #e6e6e6
+    span
+        text-transform: uppercase
+        display: inline-block
+        vertical-align: top
+        font-size: 16px
+        margin: 9.5px 10px
+        font-weight: bold
+
+.containerBar
+    position: fixed
+    height: 100%
+
+.judul
+    font-size: 19px
+    padding: 10px 0 10px 10px
+    margin-bottom: -15px
+    background: #e6e6e6
+
+.buttonGroup
+    margin-bottom: -20px
+
+.search
+    margin: 8px 0 0 0
+
+.tabs
+    dd
+        &.active
+            a
+                border-top: 1px solid #d8d7d7
+                border-left: 1px solid #d8d7d7
+                border-right: 1px solid #d8d7d7
+        > a
+            padding: 15px 1rem
+
+.tabs-content
+    border: 1px solid #d8d7d7
+    form
+        padding-left: 5px
+
+table
+    thead, tfoot
+        background: #e6e6e6
+    tr
+        &.even, &.alt, &:nth-of-type(even)
+            background: #e6e6e6
+    tbody
+        tr
+            &:hover
+                background: #00d6b2
+
+

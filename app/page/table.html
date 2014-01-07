@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<!--[if IE 9]>
+<html class="lt-ie10" lang="en"> <![endif]-->
+<html class="no-js" lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>SI Akuntansi</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css styles/vendor.css -->
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css(.tmp) styles/main.css -->
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SI Akuntansi</title>
+
+    <!-- If you are using CSS version, only link these 2 files, you may add app.css to use for your overrides if you like. -->
+    <!--<link rel="stylesheet" href="/bower_components/foundation/css/normalize.css">-->
+    <link rel="stylesheet" href="/styles/foundation.css">
+    <link rel="stylesheet" href="/styles/style.css">
+    <!--<link rel="stylesheet" href="/styles/docs.css">-->
+    <!-- endbuild -->
+    <script src="/bower_components/modernizr/modernizr.js"></script>
+</head>
+<body>
+<nav class="top-bar" data-topbar>
+    <ul class="title-area">
+        <li class="name">
+            <h1><a href="#">SI Akuntansi</a></h1>
+        </li>
+    </ul>
+
+    <section class="top-bar-section">
+        <ul class="right">
+            <li class="divider"></li>
+            <li>
+                <a href="#" class="">Menu1</a>
+            </li>
+            <li class="divider"></li>
+            <li>
+                <a href="#" class="">Menu2</a>
+            </li>
+            <li class="divider"></li>
+            <li>
+                <a href="#" class="">Menu3</a>
+            </li>
+            <li class="divider"></li>
+            <li>
+                <a href="#" class="">Menu4</a>
+            </li>
+            <li class="divider"></li>
+            <li>
+                <a href="#" class="">Menu5</a>
+            </li>
+            <li class="divider"></li>
+            <li class="has-form">
+                <a href="#" class="small button">Sign Out</a>
+            </li>
+        </ul>
+    </section>
+</nav>
+<section id="main">
+    <div class="row">
+        <div class="large-2 medium-3 columns containerBar">
+            <div class="hide-for-small">
+                <div class="samping">
+                    <div class="sidebar">
+                        <ul class="side-nav">
+                            <li class="heading">
+                                <!--<img src='images/back1.png' class='back' ng-click='clickBackBtn()'/>-->
+                                <span>menu</span>
+                            </li>
+                            <li>
+                                <!--<img class='glyph' ng-src='{{menuItem.glyph}}'/>-->
+                                <a href="#">
+                                    <span>Home</span>
+                                    <!--<img class='submenu'/>-->
+                                </a>
+                            </li>
+                            <li><a href="/page/table.html" target="area">Profil</a></li>
+                            <li><a href="#">Keuangan</a></li>
+                            <li><a href="#">Buku Tahunan</a></li>
+                            <li><a href="#">Laporan</a></li>
+                            <li><a href="#">Tambah Data</a></li>
+                            <li><a href="#">Ubah Data</a></li>
+                            <li><a href="#">Hapus Data</a></li>
+                            <li><a href="#">Jurnal</a></li>
+                            <li><a href="#">Buku Bulanan</a></li>
+                            <li><a href="#">Uang Masuk</a></li>
+                            <li><a href="#">Uang Keluar</a></li>
+                            <li><a href="#">Balance</a></li>
+                            <li><a href="#">Neraca</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="large-10 medium-9 columns content">
+            <div class="judul">
+                Judul
+            </div>
+            <hr>
+            <dl class="tabs" data-tab>
+                <dd class="active"><a href="#panel2-1">Simple Search</a></dd>
+                <dd><a href="#panel2-2">Advanced Search</a></dd>
+            </dl>
+            <div class="tabs-content">
+                <div class="content active" id="panel2-1">
+                    <form class="search">
+                        <div class="row collapse">
+                            <div class="small-12 columns">
+                                <label>Kata Kunci</label>
+                            </div>
+                            <div class="small-10 columns">
+                                <input type="text" placeholder="Simple">
+                            </div>
+                            <div class="small-2 columns">
+                                <a href="#" class="button postfix">Go</a>
+                            </div>
+                        </div>
+
+                        <!--<div class="row">-->
+                            <!--<div class="small-12">-->
+                                <!--<div class="row collapse">-->
+                                    <!--<div class="small-3 columns">-->
+                                        <!--<label for="right-label" class="right inline">Kata Kunci</label>-->
+                                    <!--</div>-->
+                                    <!--<div class="small-7 columns">-->
+                                        <!--<input type="text" placeholder="Simple">-->
+                                    <!--</div>-->
+                                    <!--<div class="small-2 columns">-->
+                                        <!--<a href="#" class="button postfix">Go</a>-->
+                                    <!--</div>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    </form>
+                </div>
+                <div class="content" id="panel2-2">
+                    <form class="search">
+                        <div class="row collapse">
+                            <div class="small-12 columns">
+                                <label>Kata Kunci</label>
+                            </div>
+                            <div class="small-10 columns">
+                                <input type="text" placeholder="Advanced">
+                            </div>
+                            <div class="small-2 columns">
+                                <a href="#" class="button postfix">Go</a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <hr>
+
+            <ul class="button-group radius buttonGroup">
+                <li><a href="#" class="button">Button 1</a></li>
+                <li><a href="#" class="button">Button 2</a></li>
+                <li><a href="#" class="button">Button 3</a></li>
+                <li><a href="#" class="button">Button 4</a></li>
+                <li><a href="#" class="button">Button 5</a></li>
+            </ul>
+
+            <hr>
+
+            <table>
+                <thead>
+                <tr>
+                    <th width="200">Table Header</th>
+                    <th width="600">Table Header</th>
+                    <th width="200">Table Header</th>
+                    <th width="200">Table Header</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Content Goes Here</td>
+                    <td>This is longer content Donec id elit non mi porta gravida at eget metus.</td>
+                    <td>Content Goes Here</td>
+                    <td>Content Goes Here</td>
+                </tr>
+                <tr>
+                    <td>Content Goes Here</td>
+                    <td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
+                    <td>Content Goes Here</td>
+                    <td>Content Goes Here</td>
+                </tr>
+                <tr>
+                    <td>Content Goes Here</td>
+                    <td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
+                    <td>Content Goes Here</td>
+                    <td>Content Goes Here</td>
+                </tr>
+                <tfoot>
+                <tr>
+                    <td colspan="4">Footer</td>
+                </tr>
+                </tfoot>
+                </tbody>
+            </table>
+
+            <ul class="pagination">
+                <li class="arrow unavailable"><a href="">&laquo;</a></li>
+                <li class="current"><a href="">1</a></li>
+                <li><a href="">2</a></li>
+                <li><a href="">3</a></li>
+                <li><a href="">4</a></li>
+                <li class="unavailable"><a href="">&hellip;</a></li>
+                <li><a href="">12</a></li>
+                <li><a href="">13</a></li>
+                <li class="arrow"><a href="">&raquo;</a></li>
+            </ul>
+            <hr>
+        </div>
+    </div>
+
+    <div id="footer">
+
+    </div>
+</section>
+
+<script src="/bower_components/jquery/jquery.js"></script>
+<script src="/bower_components/foundation/js/foundation.js"></script>
+
+<script>
+    $(document).foundation({
+        tab: {
+            callback : function (tab) {
+                console.log(tab);
+            }
+        }
+    });
+</script>
+</body>
+</html>
